@@ -58,7 +58,7 @@ const ContactForm = ({ contacts, handleAddContacts }) => {
   );
 };
 
-ContactForm.PropTypes = {
+ContactForm.propTypes = {
   contacts: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.string.isRequired,
