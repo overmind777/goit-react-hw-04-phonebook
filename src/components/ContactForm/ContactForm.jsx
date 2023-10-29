@@ -58,4 +58,15 @@ const ContactForm = ({ contacts, handleAddContacts }) => {
   );
 };
 
+ContactForm.PropTypes = {
+  contacts: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
+      number: PropTypes.string.isRequired,
+    })
+  ),
+  handleAddContacts: PropTypes.func.isRequired,
+};
+
 export default ContactForm;
